@@ -1,0 +1,238 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* -----------------------------------------Utilities */
+
+/* Background */
+.bg-ct {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-cv {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-complete {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+/* Images */
+.ob-ct {
+  object-fit: contain;
+}
+.ob-cv {
+  object-fit: cover;
+}
+
+/* flex */
+
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+.a-s {
+  align-items: flex-start;
+}
+
+.a-c {
+  align-items: center;
+}
+.a-e {
+  align-items: flex-end;
+}
+.a-st {
+  align-items: stretch;
+}
+
+.j-s {
+  justify-content: flex-start;
+}
+
+.j-sb {
+  justify-content: space-between;
+}
+.j-a {
+  justify-content: space-around;
+}
+
+.j-c {
+  justify-content: center;
+}
+
+.j-e {
+  justify-content: flex-end;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* positions */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.abosulte-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+.absolute-upper-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Wrapper */
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+/* Cursor */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* size */
+
+.full-view {
+  width: 100%;
+  height: 100vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/* Text */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Text align */
+
+.t-center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+
+/* Images */
+
+.square {
+  aspect-ratio: 1/1;
+}
+
+.rectangle {
+  aspect-ratio: 16/9;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    overflow: hidden;
+  }
+}
