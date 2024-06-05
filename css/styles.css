@@ -231,8 +231,4 @@ h6 {
   aspect-ratio: 16/9;
 }
 
-@media only screen and (max-width: 1024px) {
-  .main {
-    overflow: hidden;
-  }
-}
+
