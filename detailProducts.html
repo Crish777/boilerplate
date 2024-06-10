@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta http-equiv=”Content-Security-Policy” content=”default-src ‘self’ data:
+    gap: ‘unsafe-eval’ ws: ; style-src ‘self’ ‘unsafe-inline’; script-src https:
+    *.example.com ; media-src ‘none’; font-src *; connect-src *; img-src ‘self’
+    data: content:;”>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="siteHeader">
+      <div class="container containerHeader flex j-sb a-c">
+        <div class="leftHeader flex a-c j-s">
+          <div class="burger bg-ct"></div>
+          <img class="siteLogo" src="./assets/img/logo-hydroil.png" />
+        </div>
+
+        <a href="mailto:cristhian@paperplane.co" class="mailLogo bg-ct"></a>
+      </div>
+    </header>
+    <main class="siteMain">
+      <section class="siteSection heroSection relative block bg-cv">
+        <div class="prevSlick bg-ct absolute"></div>
+        <div class="nextSlick bg-ct absolute"></div>
+        <div class="wrapperSlickHero width-100">
+          <div class="wrapperImgHero bg-cv wrapperImgHero-1 flex j-s a-e">
+            <!--
+              Change horizontal position traslucent box with classes: flex* j-s = flex-start j-c = center j-e = flex-end
+              Change vertical position traslucent box with classes: flex* a-s = flex-start a-c = center a-e = flex-end
+              Change align text with classes: t-left t-center t-right
+              Change section height with classes: height-100 height-90 ... height-50
+            -->
+            <div class="container containerHero height-80 flex j-s a-e t-left">
+              <!--
+                Change traslucent box width with classes: width-100 width-90 ... width-50
+              -->
+              <div class="transparentBoxContent width-50">
+                <h2 class="subtitleFont">Lorem Ipsum dolor sit</h2>
+                <p class="bodyFont">
+                  Proporciona soluciones de Ingeniería de precisión para una
+                  amplia variedad de aplicaciones móviles e industriales. 
+                  Distribuimos y damos servicio a productos de los principales
+                  fabricantes de la industria Oleo-hidráulica.
+                </p>
+                <a href="https://google.com" class="primaryButton relative"
+                  >Conoce más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="wrapperImgHero bg-cv wrapperImgHero-2 flex j-s a-e">
+            <!--
+              Change horizontal position traslucent box with class: flex* j-s = flex-start j-c = center j-e = flex-end
+              Change align text with class: t-left t-center t-right
+            -->
+            <div
+              class="container containerHero height-80 flex j-c a-c t-center"
+            >
+              <!--
+                Change traslucent box width with class: width-100 width-90 ... width-50
+              -->
+              <div class="transparentBoxContent width-50">
+                <h2 class="subtitleFont">Lorem Ipsum dolor sit</h2>
+                <p class="bodyFont">
+                  Proporciona soluciones de Ingeniería de precisión para una
+                  amplia variedad de aplicaciones móviles e industriales. 
+                  Distribuimos y damos servicio a productos de los principales
+                  fabricantes de la industria Oleo-hidráulica.
+                </p>
+                <a href="https://google.com" class="primaryButton relative"
+                  >Conoce más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="wrapperImgHero bg-cv wrapperImgHero-3 flex j-s a-e">
+            <!--
+              Change horizontal position traslucent box with class: flex* j-s = flex-start j-c = center j-e = flex-end
+              Change align text with class: t-left t-center t-right
+            -->
+            <div class="container containerHero height-80 flex j-e a-s t-right">
+              <!--
+                Change traslucent box width with class: width-100 width-90 ... width-50
+              -->
+              <div class="transparentBoxContent width-50">
+                <h2 class="subtitleFont">Lorem Ipsum dolor sit</h2>
+                <p class="bodyFont">
+                  Proporciona soluciones de Ingeniería de precisión para una
+                  amplia variedad de aplicaciones móviles e industriales. 
+                  Distribuimos y damos servicio a productos de los principales
+                  fabricantes de la industria Oleo-hidráulica.
+                </p>
+                <a href="https://google.com" class="primaryButton relative"
+                  >Conoce más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="siteSection filterSection sticky">
+        <div class="container containerFilterSection flex j-sb a-s">
+          <aside class="filterProducts width-30">
+            <ul class="ulFilterProducts">
+              <li class="filterItem" data-sec="hydraulicEngine">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">Motores Hidráulicos</p>
+              </li>
+              <li class="filterItem" data-sec="hydraulicMachine">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">Máquinas Hidráulicas</p>
+              </li>
+              <li class="filterItem" data-sec="hydraulicValves">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">Válvulas Hidráulicas</p>
+              </li>
+              <li class="filterItem" data-sec="pto">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">Toma de Fuerza (PTO’s)</p>
+              </li>
+              <li class="filterItem" data-sec="accesories">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">Accesorios</p>
+              </li>
+              <li class="filterItem" data-sec="chromeBar">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">
+                  BARRA CROMADA Y TUBERÍA RECTIFICADA
+                </p>
+              </li>
+              <li class="filterItem" data-sec="others">
+                <div class="lineBefore"></div>
+                <p class="textFilter bodyFont">Otros Productos</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="siteSection productsSection">
+        <div class="container containerProductsSection flex j-e a-s">
+          <div class="containerProducts relative width-60">
+            <div class="groupProductContainer" id="hydraulicEngine">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Bombas de Engranaje</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="groupProductContainer" id="hydraulicMachine">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Máquinas Hidráulicas</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="groupProductContainer" id="hydraulicValves">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Bombas de Paletas</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="groupProductContainer" id="pto">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Mini Centrales</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="groupProductContainer" id="accesories">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Mini Centrales</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="groupProductContainer" id="chromeBar">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Mini Centrales</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="groupProductContainer" id="others">
+              <div class="titleTextContainer width-100 relative">
+                <div class="lineBefore"></div>
+                <h2 class="subtitleFont">Mini Centrales</h2>
+                <p class="bodyFont">Bombas Hidráulicas</p>
+              </div>
+              <div class="whiteBoxProducts">
+                <div class="logosContainer flex wrap j-s a-c">
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/logo.svg)"
+                    class="logo bg-ct"
+                  ></div>
+                </div>
+                <div class="imgProductsContainer flex j-s a-s wrap">
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                  <div
+                    style="background-image: url(./assets/img/product.png)"
+                    class="imgProduct bg-ct"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="siteSection contactSection bgLight">
+        <div class="container contianerContact flex j-sb a-s">
+          <div class="leftSideContact width-40">
+            <div
+              class="titleTextContainer titleContainerContactForm width-100 relative"
+            >
+              <div class="lineBefore"></div>
+              <h2 class="subtitleFont">Contáctanos</h2>
+              <p class="bodyFont">
+                Lorem ipsum dolor sit amet consectetur. Lacus cras et sed non
+                neque varius. Eu fermentum lobortis quis elementum.
+              </p>
+            </div>
+            <form class="contactForm width-100">
+              <label class="labelContactForm block width-100"
+                ><span class="labelTextForm block width-100">Nombre*:</span>
+                <input
+                  class="inputContact width-100"
+                  type="text"
+                  name=""
+                  required
+                />
+              </label>
+              <label class="labelContactForm block"
+                ><span class="labelTextForm block width-100">Email*:</span>
+                <input
+                  class="inputContact width-100"
+                  type="text"
+                  name=""
+                  required
+                />
+              </label>
+              <label class="labelContactForm block"
+                ><span class="labelTextForm block width-100">Mensaje:</span>
+                <textarea class="textareaContact width-100"></textarea>
+              </label>
+              <button class="primaryButton relative">Enviar</button>
+            </form>
+          </div>
+          <div class="rightSideContact width-50 t-right">
+            <h2 class="subtitleFont">Sede Principal</h2>
+            <p class="bodyFont">
+              Carrera 62 N° 14 96 Bogotá - Colombia
+              <span class="pinIcon bg-ct"></span>
+            </p>
+
+            <div
+              id="siteMap"
+              class="contactMap bg-cv rectangle width-100"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="siteFooter">
+      <div class="container containerFooter">
+        <div class="topFooter width-100 flex j-c a-c">
+          <div class="leftLine lineFooter"></div>
+          <a href="index.html" class="block">
+            <img
+              class="siteLogo logoFooter"
+              src="./assets/img/logo-hydroil.png"
+            />
+          </a>
+          <div class="rightFooter lineFooter"></div>
+        </div>
+        <nav class="footerNav width-100 flex j-c a-c">
+          <a href="" class="innerFooterNav">Productos</a>
+          <div class="pointSeparator bgLight"></div>
+          <a href="" class="innerFooterNav">Nosotros</a>
+          <div class="pointSeparator bgLight"></div>
+          <a href="" class="innerFooterNav">Servicios</a>
+          <div class="pointSeparator bgLight"></div>
+          <a href="" class="innerFooterNav">Catálogos</a>
+          <div class="pointSeparator bgLight"></div>
+          <a href="" class="innerFooterNav">Contáctanos</a>
+        </nav>
+      </div>
+      <nav class="legalNav width-100">
+        <div class="container legalNavContainer flex j-c a-c">
+          <a href="" class="legalLink">Política de privacidad</a>
+          <p class="legalLink">&copy; 2024 Hydroil</p>
+          <a href="" class="legalLink">Términos y condiciones</a>
+        </div>
+      </nav>
+    </footer>
+
+    <div id="siteMenu" class="width-100 height-100">
+      <header class="siteHeader">
+        <div class="container containerHeader flex j-sb a-c">
+          <div class="leftHeader flex a-c j-s">
+            <div class="burger close bg-ct"></div>
+            <a href="index.html" class="block">
+              <img class="siteLogo" src="./assets/img/logo-hydroil.png" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <nav class="container width-90 containerMenu">
+        <div class="groupInneMenu">
+          <div class="topDropDown flex j-s a-c">
+            <div class="preLine"></div>
+            <p class="innerNavMenu subtitleFont uppercase">Productos</p>
+            <div class="arrowDrop bg-ct"></div>
+          </div>
+          <div class="innerDopDownMenu">
+            <a href="products.html" class="linkInnerDoprDown block"
+              >Lorem Ipsum dolor sit</a
+            >
+            <a href="products.html" class="linkInnerDoprDown block"
+              >Lorem Ipsum</a
+            >
+            <a href="products.html" class="linkInnerDoprDown block">Lorem</a>
+          </div>
+        </div>
+        <a href="" class="innerNavMenu flex j-s a-c">
+          <div class="preLine"></div>
+          <p class="innerNavMenu subtitleFont uppercase">NOSOTROS</p>
+        </a>
+        <a href="" class="innerNavMenu flex j-s a-c">
+          <div class="preLine"></div>
+          <p class="innerNavMenu subtitleFont uppercase">CATÁLOGO</p>
+        </a>
+        <a href="" class="innerNavMenu flex j-s a-c">
+          <div class="preLine"></div>
+          <p class="innerNavMenu subtitleFont uppercase">CONTÁCTENOS</p>
+        </a>
+      </nav>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

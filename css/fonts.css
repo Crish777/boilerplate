@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HelveticaRoman';
+  src: url('../assets/fonts/HelveticaNeueLTStd-Roman.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaBlack';
+  src: url('../assets/fonts/HelveticaNeueLTStd-XBlkCn.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
